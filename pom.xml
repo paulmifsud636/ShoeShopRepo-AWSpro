@@ -23,12 +23,7 @@
     			<version>3.0.5</version>
     			<type>pom</type>
 		</dependency>
-<dependency>
-  <groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-shade-plugin</artifactId>
-  <version>3.2.4</version>
-  <type>maven-plugin</type>
-</dependency>
+
                 <dependency>
                        <groupId>org.apache.maven.plugins</groupId>
                        <artifactId>maven-resources-plugin</artifactId>
@@ -63,15 +58,9 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>				
 			</plugin>
 			<plugin>
-				<inherited>true</inherited>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>${maven-war-plugin.version}</version>
-				<configuration>
-				<failOnMissingWebXml>false</failOnMissingWebXml>
-				<warName>${project.artifactId}</warName>
-				<attachClasses>true</attachClasses>
-				</configuration>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.4.3</version>
 			</plugin> 
 		</plugins>
 	</build>
